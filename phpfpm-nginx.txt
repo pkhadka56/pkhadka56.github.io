@@ -1,0 +1,26 @@
+phpfpm and nginx:
+
+START
+
+- phpfpm and nginx are serving separately 
+  The nginx serves the web files. Any files ending with .php is served by php-fpm. Suppose you have info.php file inside php-fpm and not in nginx web root folder. Then you will get 404 error. You should have the same info.php file in nginx as well. Although it is not require to have the same content. Even empty files will work.
+
+- The root directory for nginx and php-fpm serving the files can be different. Make sure to configure it in your nginx config.
+  Define a different root directory in nginx.conf inside server block.
+  
+	set $phpfpm_document_root /phpfpm/root/dir;
+
+  Then inside the block where you configure php set the SCRIPT_FILENAME.
+
+	location ~ [^/]\.php(/|$) {
+          if (!-f $document_root$fastcgi_script_name) {
+            return 404;
+          }
+
+          fastcgi_param SCRIPT_FILENAME $phpfpm_document_root$fastcgi_script_name;
+          fastcgi_index index.php;
+          include fastcgi_params;
+          fastcgi_pass  php:9000;
+        }
+
+END
