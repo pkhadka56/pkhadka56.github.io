@@ -13,10 +13,10 @@ TIP: Get started creating your own theme here
   --font-family-header: 'Montserrat', sans-serif;
   --font-family-list: 'Montserrat', sans-serif;
   --theme-color-title: white;
-  --color-bg: #9480ff;
+  --color-bg: #A8CAFE;
   --color-bg-alt: #d7f5ef;
   --color-text-main: white;
-  --color-primary: #afece0;
+  --color-primary: #A8CAFE;
 }
 
 /* Add your style rules! */
