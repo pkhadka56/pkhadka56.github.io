@@ -12,7 +12,7 @@ TIP: Get started creating your own theme here
   --font-family: 'Montserrat', sans-serif;
   --font-family-header: 'Montserrat', sans-serif;
   --font-family-list: 'Montserrat', sans-serif;
-  --theme-color-title: white;
+  --theme-color-title: black;
   --color-bg: #A8CAFE;
   --color-bg-alt: #d7f5ef;
   --color-text-main: white;
@@ -29,7 +29,7 @@ body {
     rgba(45, 45, 45, 1) 75%,
     rgba(92, 92, 92, 1) 100%
   );
-  color: white;
+  color: black;
 }
 
 ul.link-list li a {
