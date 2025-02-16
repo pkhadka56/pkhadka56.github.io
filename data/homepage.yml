@@ -68,7 +68,8 @@ client_and_work:
 
 # testimonial
 testimonial:
-  enable: false
+  enable: true
+  title: "Testimonials"
 
 # contact
 contact:
