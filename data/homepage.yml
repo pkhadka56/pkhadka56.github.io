@@ -4,10 +4,10 @@
 showcase:
   enable: true
   image:
-    x: "images/showcase/display.png"
-    _2x: "images/showcase/display.png"
-  imageMobile:
-    x: "images/showcase/display.png"
+    x: "images/showcase/prakash.jpg"
+    _2x: "images/showcase/prakash.jpg"
+  # imageMobile:
+  #   x: "images/showcase/showcase-mobile.jpg"
 
   button:
     icon: "icon-email"
