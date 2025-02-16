@@ -107,6 +107,10 @@ target = "static"
         name = "Experience"
         URL = "#experience"
         weight = 4
+      [[languages.en.menus.header]]
+        name = "Testimonials"
+        URL = "#testimonial"
+        weight = 5
       #[[languages.en.menus.header]]
       #  name = "Blog"
       #  URL = "/blog"
@@ -129,6 +133,10 @@ target = "static"
         name = "Experience"
         URL = "#experience"
         weight = 4
+      [[languages.en.menus.footer]]
+        name = "Testimonials"
+        URL = "#testimonial"
+        weight = 5
       # [[languages.en.menus.footer]]
       #   name = "Contact"
       #   URL = "#contact"
@@ -154,6 +162,10 @@ target = "static"
         name = "अनुभव"
         URL = "#experience"
         weight = 4
+      [[languages.np.menus.header]]
+        name = "प्रशंसापत्र"
+        URL = "#testimonial"
+        weight = 5
 
       # Footer
       [[languages.np.menus.footer]]
@@ -168,6 +180,10 @@ target = "static"
         name = "अनुभव"
         URL = "#experience"
         weight = 4
+      [[languages.np.menus.footer]]
+        name = "प्रशंसापत्र"
+        URL = "#testimonial"
+        weight = 5
 
 # Plugins
 

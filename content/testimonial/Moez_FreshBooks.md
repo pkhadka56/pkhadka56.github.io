@@ -4,7 +4,7 @@ title: 'Senior Manager'
 draft: false
 
 name: "Moez Hanzouti"
-position: "Senior Manager, webops"
+position: "Senior Manager, FreshBooks"
 
 ---
 
