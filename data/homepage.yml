@@ -5,7 +5,7 @@ showcase:
   enable: true
   image:
     x: "images/showcase/prakash.jpg"
-    _2x: "images/showcase/prakash.jpg"
+    _2x: "images/showcase/prakash@2x.jpg"
   # imageMobile:
   #   x: "images/showcase/showcase-mobile.jpg"
 
@@ -27,8 +27,8 @@ about:
     icon: "icon-user"
     URL: "https://www.linkedin.com/in/pkhadka56/"
   image:
-    x: "images/about/prakash.png"
-    _2x: "images/about/prakash@2x.png"
+    x: "images/about/about.jpg"
+    _2x: "images/about/about@2x.jpg"
 
 # education
 education:
