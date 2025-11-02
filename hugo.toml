@@ -10,6 +10,8 @@ googleAnalytics = "G-YB32WM67KX"
 tag = 'tags'
 
 [params]
+faviconPath = "favicon"
+
 # Meta description
 description = "Remote APAC Senior DevOps Engineer/Infrastructure Engineer"
 
@@ -62,12 +64,12 @@ name = "home"
 url = "/"
 
 [[params.menu]]
-name = "posts"
-url = "/posts"
+name = "certs"
+url = "/certs"
 
 [[params.menu]]
-name = "about"
-url = "/about"
+name = "books"
+url = "/books"
 
 # Syntax highlight on code blocks
 [markup]
