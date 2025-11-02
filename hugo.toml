@@ -10,6 +10,8 @@ googleAnalytics = "G-YB32WM67KX"
 tag = 'tags'
 
 [params]
+faviconPath = "favicon"
+
 # Meta description
 description = "Remote APAC Senior DevOps Engineer/Infrastructure Engineer"
 
