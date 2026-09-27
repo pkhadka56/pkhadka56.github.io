@@ -1,4 +1,4 @@
-baseURL = 'https://www.prakash-khadka.com.np/'
+baseURL = 'https://prakash-khadka.com.np/'
 languageCode = 'en-us'
 title = 'Prakash Khadka'
 theme = 'typo'
@@ -13,22 +13,12 @@ tag = 'tags'
 faviconPath = "favicon"
 
 # Meta description
-description = "Remote APAC Senior DevOps Engineer/Infrastructure Engineer"
+description = "Prakash Khadka is a Site Reliability Engineer working with Google Cloud, Kubernetes, infrastructure as code and cloud security."
 
 # Appearance settings
 theme = 'auto'
 colorPalette = 'base16-eighties'
 hideHeader = false
-
-# Intro on main page, content is markdown
-homeIntroTitle = 'Namaste!'
-homeIntroContent = """
-I’m a DevOps and Infrastructure Engineer from Kathmandu, Nepal, passionate about building reliable, scalable systems. I work mainly with Google Cloud and Kubernetes, focusing on automation and performance at scale. 
-
-I love puzzles whether in infrastructure, on a tough hike, or during a long run. I enjoy hard problems, physical challenges, and working with smart people to solve them.
-
-If you want to connect or collaborate, feel free to reach out to me on LinkedIn.
-"""
 
 # Collection to display on home
 #homeCollectionTitle = 'Posts'
@@ -41,7 +31,7 @@ listDateFormat = '2 Jan 2006'
 
 # Footer
 showFooter = true
-footerContent = "© 2025 Prakash Khadka — Built with curiosity, coffee, and Kubernetes."
+footerContent = "Prakash Khadka — Built with curiosity, coffee, and Kubernetes."
 
 # Breadcrumbs
 [params.breadcrumbs]
@@ -62,6 +52,10 @@ url = "https://github.com/pkhadka56"
 [[params.menu]]
 name = "home"
 url = "/"
+
+[[params.menu]]
+name = "skills"
+url = "/skills"
 
 [[params.menu]]
 name = "certs"
