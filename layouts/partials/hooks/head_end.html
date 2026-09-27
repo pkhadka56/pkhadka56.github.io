@@ -1,0 +1,31 @@
+{{- if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Prakash Khadka",
+  "url": "{{ site.BaseURL }}",
+  "jobTitle": "Site Reliability Engineer",
+  "knowsAbout": [
+    "Site Reliability Engineering",
+    "Google Cloud Platform",
+    "Kubernetes",
+    "Terraform",
+    "Cloud Security",
+    "Linux"
+  ],
+  "sameAs": [
+    {{ range $i, $e := site.Params.social }}{{ if $i }},{{ end }}"{{ trim $e.url " " }}"{{ end }}
+  ]
+}
+</script>
+{{- end }}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "{{ site.Title }}",
+  "url": "{{ site.BaseURL }}"
+}
+</script>
