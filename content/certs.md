@@ -5,8 +5,6 @@ hideBackToTop: true
 hidePagination: true
 ---
 
-Certifications I hold, covering cloud infrastructure, Kubernetes, Linux and security.
-
 1. [Google Cloud Professional Cloud Architect](https://cloud.google.com/learn/certification/cloud-architect)
 2. [Certified Kubernetes Administrator (CKA)](https://www.cncf.io/training/certification/cka/)
 3. [Red Hat Certified Engineer (RHCE)](https://www.redhat.com/en/services/certification/rhce)
