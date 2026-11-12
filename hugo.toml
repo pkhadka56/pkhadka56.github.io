@@ -13,7 +13,7 @@ tag = 'tags'
 faviconPath = "favicon"
 
 # Meta description
-description = "Prakash Khadka is a Site Reliability Engineer working with Google Cloud, Kubernetes, infrastructure as code and cloud security."
+description = "Prakash Khadka is a Site Reliability Engineer working with cloud infrastructure, Kubernetes, infrastructure as code and cloud security."
 
 # Appearance settings
 theme = 'auto'
@@ -52,10 +52,6 @@ url = "https://github.com/pkhadka56"
 [[params.menu]]
 name = "home"
 url = "/"
-
-[[params.menu]]
-name = "skills"
-url = "/skills"
 
 [[params.menu]]
 name = "certs"
