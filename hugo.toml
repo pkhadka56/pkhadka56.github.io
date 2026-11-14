@@ -11,6 +11,10 @@ tag = 'tags'
 
 [params]
 faviconPath = "favicon"
+showTags = true
+
+# Posts and tag pages with these tags get the terminal style
+hackerTags = ["ctf", "htb", "hacking"]
 
 # Meta description
 description = "Prakash Khadka is a Site Reliability Engineer working with cloud infrastructure, Kubernetes, infrastructure as code and cloud security."
@@ -26,8 +30,9 @@ hideHeader = false
 
 # Lists parameters
 paginationSize = 100
-listSummaries = true
+listSummaries = false
 listDateFormat = '2 Jan 2006'
+singleDateFormat = '2 Jan 2006'
 
 # Footer
 showFooter = true
@@ -60,6 +65,10 @@ url = "/certs"
 [[params.menu]]
 name = "books"
 url = "/books"
+
+[[params.menu]]
+name = "notes"
+url = "/notes"
 
 # Syntax highlight on code blocks
 [markup]

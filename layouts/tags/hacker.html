@@ -1,0 +1,32 @@
+{{ define "main" }}
+{{ partial "hacker-style.html" . }}
+<style>
+  .htb-prompt { margin: 1rem 0 .25rem; }
+  .htb-prompt .user { font-weight: bold; }
+  .htb-prompt .path { color: var(--content-secondary); }
+  .htb-out { margin: 0 0 1.5rem; }
+  .htb-line { display: flex; gap: 1rem; margin: .4rem 0; }
+  .htb-date { color: var(--content-secondary); white-space: nowrap; }
+  .htb-cursor { display: inline-block; width: .6em; height: 1em; background: var(--content-primary); vertical-align: text-bottom; animation: htb-blink 1s steps(1) infinite; }
+  @keyframes htb-blink { 50% { opacity: 0; } }
+  @media (prefers-reduced-motion: reduce) { .htb-cursor { animation: none; } }
+</style>
+
+<div class="list-container">
+  {{ partial "breadcrumbs.html" . }}
+  <div class="single-intro-container"></div>
+
+  <p class="htb-prompt"><span class="user">root@{{ lower .Title }}</span>:<span class="path">~</span>$ cat ./README</p>
+  <p class="htb-out">{{ with .Description }}{{ . }}{{ else }}Posts tagged {{ lower .Title }}.{{ end }}</p>
+
+  <p class="htb-prompt"><span class="user">root@{{ lower .Title }}</span>:<span class="path">~</span>$ ls -t ./writeups</p>
+  {{ range .Pages }}
+  <div class="htb-line">
+    <span class="htb-date">{{ .Date | time.Format (site.Params.listDateFormat | default "2 Jan 2006") }}</span>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+  </div>
+  {{ end }}
+
+  <p class="htb-prompt"><span class="user">root@{{ lower .Title }}</span>:<span class="path">~</span>$ <span class="htb-cursor"></span></p>
+</div>
+{{ end }}
